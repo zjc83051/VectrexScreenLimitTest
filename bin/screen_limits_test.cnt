@@ -1,0 +1,647 @@
+HIGHEST_USED_RAM $0000
+COMMENT $0000 not used RAM onword...
+LABEL $0000 _game_header
+LABEL $0025 _crt0_init_data
+LABEL $003D _crt0_copy_data
+LABEL $0045 _crt0_init_bss
+LABEL $004E _crt0_zero_bss
+LABEL $0054 _crt0_startup
+LABEL $005D _crt0_restart
+LABEL $0060 _memcmp
+LABEL $006D L2
+LABEL $00A3 L4
+LABEL $00A9 L9
+LABEL $00B1 _memcpy
+LABEL $00C0 L12
+LABEL $00DA L11
+LABEL $00E0 _memmove
+LABEL $00F3 L18
+LABEL $0110 L17
+LABEL $0116 L16
+LABEL $012D L24
+LABEL $0134 L19
+LABEL $0146 _memset
+LABEL $0154 L27
+LABEL $015C L26
+LABEL $0160 __Dot_d
+LABEL $0165 __Dot_dd
+LABEL $016A __Print_Str_hwyx
+LABEL $0173 __Print_Str_yx
+LABEL $017C __Print_Str_d
+LABEL $0187 __Print_Str_dd
+LABEL $0192 __Print_List_hw
+LABEL $019B __Print_List
+LABEL $01A4 __Print_List_chk
+LABEL $01AD __Print_Ships_x
+LABEL $01B2 __Print_Ships
+LABEL $01B7 __Print_Str
+LABEL $01C0 __Print_MRast
+LABEL $01C7 __Draw_Pat_VL_aa
+LABEL $01CC __Draw_Pat_VL_a
+LABEL $01D1 __Draw_Line_d
+LABEL $01D6 __Draw_VL_ab
+LABEL $01DB __Draw_VL_a
+LABEL $01E0 __Mov_Draw_VL_ab
+LABEL $01E5 __Mov_Draw_VL_a
+LABEL $01EA __Mov_Draw_VL_d
+LABEL $01EF __Rot_VL_Mode
+LABEL $01FA __Rot_VL_Pack
+LABEL $0203 __Rot_VL_M_dft
+LABEL $020C __Random_3
+LABEL $0212 __Random
+LABEL $0218 __Bitmask_a
+LABEL $0220 __Abs_a_b
+LABEL $0228 __Xform_Sin
+LABEL $0230 __Get_Rise_Run
+LABEL $0236 __Xform_Run_a
+LABEL $023E __Xform_Run
+LABEL $0244 __Xform_Rise_a
+LABEL $024C __Xform_Rise
+LABEL $0252 __Clear_x_d
+LABEL $0257 __Move_Mem_a_1
+LABEL $0262 __Move_Mem_a
+LABEL $026D __Clear_x_b_a
+LABEL $0272 __Read_Btns_Mask
+LABEL $0277 __Select_Game
+LABEL $0280 __Display_Option
+LABEL $028B __Add_Score_a
+LABEL $0294 __Add_Score_d
+LABEL $0299 __Compare_Score
+LABEL $02A4 __New_High_Score
+LABEL $02AD __Sound_Byte
+LABEL $02B2 __Sound_Byte_x
+LABEL $02B7 __Sound_Bytes
+LABEL $02C0 __Sound_Bytes_x
+LABEL $02C9 __Do_Sound
+LABEL $02D0 __Init_Music_chk
+LABEL $02D9 __Init_Music
+LABEL $02E2 __Init_Music_a
+LABEL $02EB __Init_Music_x
+LABEL $02F4 __Explosion_Snd
+LABEL $02FD __Moveto_d_7F
+LABEL $0302 __Moveto_dd_7F
+LABEL $0307 __Moveto_d
+LABEL $030C __Moveto_dd
+LABEL $0311 __Intensity_a
+LABEL $0316 __Obj_Will_Hit_u
+LABEL $0328 __Obj_Will_Hit
+LABEL $033A __Obj_Hit
+LABEL $034A __Rise_Run_X
+LABEL $0352 __Rise_Run_Y
+LABEL $035A __Rise_Run_Len
+LABEL $0362 __Rot_VL_ab
+LABEL $036D __Rot_VL_Diff
+LABEL $0376 __Rot_VL
+LABEL $037F __Dot_y
+LABEL $0388 __Dot_py
+LABEL $0391 __Draw_Pack
+LABEL $039B __Draw_Pack_py
+LABEL $03A5 __Print_Msg
+LABEL $03B0 __Displ8_xy
+LABEL $03B9 __Displ16_xy
+LABEL $03C2 __Ranpos
+LABEL $03C8 __Draw_Scores
+LABEL $03CF __Draw_Score
+LABEL $03D6 __Wait_Bound
+LABEL $03DD _adjustVariable
+LABEL $03ED L3
+LABEL $03FB L2
+LABEL $0412 L6
+LABEL $041C L14
+LABEL $0420 L13
+LABEL $0426 L12
+LABEL $042C _numToString
+LABEL $048B LC0
+LABEL $0494 LC1
+LABEL $049D _main
+LABEL $0500 L38
+LABEL $050A L19
+LABEL $0521 L23
+LABEL $0532 L26
+LABEL $0550 L30
+LABEL $0662 L32
+LABEL $0687 L21
+LABEL $0692 L25
+LABEL $06A8 L28
+LABEL $06B3 L36
+LABEL $06C3 L34
+LABEL $06CF L37
+LABEL $06DF L35
+LABEL $06EB _DEFAULT_WIDTH.2918
+LABEL $06EC _MAX_WIDTH_16.2922
+LABEL $06EE _MIN_WIDTH_16.2921
+LABEL $06F0 _MAX_SCALE_16.2920
+LABEL $06F2 _MIN_SCALE_16.2919
+LABEL $06F4 _numDigits.2905
+LABEL $06F5 _JOY_DEAD_ZONE.2889
+LABEL $E7B5 ___Displ8_xy
+LABEL $E7D2 ___Displ16_xy
+LABEL $E98A ___Ranpos
+LABEL $EA3E ___Rnd_Cone
+LABEL $EA5D ___Dot_y
+LABEL $EA6D ___Dot_py
+LABEL $EA7F ___Draw_Pack
+LABEL $EA8D ___Draw_Pack_py
+LABEL $EAA8 ___Print_Msg
+LABEL $EAB4 ___Draw_Score
+LABEL $EACF ___Draw_Scores
+LABEL $EAF0 ___Wait_Bound
+LABEL $F000 ___Reset
+LABEL $F14C ___Init_VIA
+LABEL $F164 ___Init_OS_RAM
+LABEL $F18B ___Init_OS
+LABEL $F192 ___Wait_Recal
+LABEL $F1AA ___DP_to_D0
+LABEL $F1AF ___DP_to_C8
+LABEL $F1B4 ___Read_Btns_Mask
+LABEL $F1BA ___Read_Btns
+LABEL $F1F5 ___Joy_Analog
+LABEL $F1F8 ___Joy_Digital
+LABEL $F256 ___Sound_Byte
+LABEL $F259 ___Sound_Byte_x
+LABEL $F272 ___Clear_Sound
+LABEL $F27D ___Sound_Bytes
+LABEL $F284 ___Sound_Bytes_x
+LABEL $F289 ___Do_Sound
+LABEL $F28C ___Do_Sound_x
+LABEL $F29D ___Intensity_1F
+LABEL $F2A1 ___Intensity_3F
+LABEL $F2A5 ___Intensity_5F
+LABEL $F2A9 ___Intensity_7F
+LABEL $F2AB ___Intensity_a
+LABEL $F2BE ___Dot_ix_b
+LABEL $F2C1 ___Dot_ix
+LABEL $F2C3 ___Dot_d
+LABEL $F2C5 ___Dot_here
+LABEL $F2D5 ___Dot_List
+LABEL $F2DE ___Dot_List_Reset
+LABEL $F2E6 ___Recalibrate
+LABEL $F2F2 ___Moveto_x_7F
+LABEL $F2FC ___Moveto_d_7F
+LABEL $F308 ___Moveto_ix_FF
+LABEL $F30C ___Moveto_ix_7F
+LABEL $F30E ___Moveto_ix_b
+LABEL $F310 ___Moveto_ix
+LABEL $F312 ___Moveto_d
+LABEL $F34A ___Reset0Ref_D0
+LABEL $F34F ___Check0Ref
+LABEL $F354 ___Reset0Ref
+LABEL $F35B ___Reset_Pen
+LABEL $F36B ___Reset0Int
+LABEL $F373 ___Print_Str_hwyx
+LABEL $F378 ___Print_Str_yx
+LABEL $F37A ___Print_Str_d
+LABEL $F385 ___Print_List_hw
+LABEL $F38A ___Print_List
+LABEL $F38C ___Print_List_chk
+LABEL $F391 ___Print_Ships_x
+LABEL $F393 ___Print_Ships
+LABEL $F3AD ___Mov_Draw_VLc_a
+LABEL $F3B1 ___Mov_Draw_VL_b
+LABEL $F3B5 ___Mov_Draw_VLcs
+LABEL $F3B7 ___Mov_Draw_VL_ab
+LABEL $F3B9 ___Mov_Draw_VL_a
+LABEL $F3BC ___Mov_Draw_VL
+LABEL $F3BE ___Mov_Draw_VL_d
+LABEL $F3CE ___Draw_VLc
+LABEL $F3D2 ___Draw_VL_b
+LABEL $F3D6 ___Draw_VLcs
+LABEL $F3D8 ___Draw_VL_ab
+LABEL $F3DA ___Draw_VL_a
+LABEL $F3DD ___Draw_VL
+LABEL $F3DF ___Draw_Line_d
+LABEL $F404 ___Draw_VLp_FF
+LABEL $F408 ___Draw_VLp_7F
+LABEL $F40C ___Draw_VLp_scale
+LABEL $F40E ___Draw_VLp_b
+LABEL $F410 ___Draw_VLp
+LABEL $F433 ___Draw_Pat_VL_aa
+LABEL $F434 ___Draw_Pat_VL_a
+LABEL $F437 ___Draw_Pat_VL
+LABEL $F439 ___Draw_Pat_VL_d
+LABEL $F46E ___Draw_VL_mode
+LABEL $F495 ___Print_Str
+LABEL $F498 ___Print_MRast
+LABEL $F511 ___Random_3
+LABEL $F517 ___Random
+LABEL $F533 ___Init_Music_Buf
+LABEL $F53F ___Clear_x_b
+LABEL $F542 ___Clear_C8_RAM
+LABEL $F545 ___Clear_x_256
+LABEL $F548 ___Clear_x_d
+LABEL $F550 ___Clear_x_b_80
+LABEL $F552 ___Clear_x_b_a
+LABEL $F55A ___Dec_3_Counters
+LABEL $F55E ___Dec_6_Counters
+LABEL $F563 ___Dec_Counters
+LABEL $F56D ___Delay_3
+LABEL $F571 ___Delay_2
+LABEL $F575 ___Delay_1
+LABEL $F579 ___Delay_0
+LABEL $F57A ___Delay_b
+LABEL $F57D ___Delay_RTS
+LABEL $F57E ___Bitmask_a
+LABEL $F584 ___Abs_a_b
+LABEL $F58B ___Abs_b
+LABEL $F593 ___Rise_Run_Angle
+LABEL $F5D9 ___Get_Rise_Idx
+LABEL $F5DB ___Xform_Sin
+LABEL $F5EF ___Get_Rise_Run
+LABEL $F5FF ___Rise_Run_X
+LABEL $F601 ___Rise_Run_Y
+LABEL $F603 ___Rise_Run_Len
+LABEL $F610 ___Rot_VL_ab
+LABEL $F613 ___Rot_VL_Diff
+LABEL $F616 ___Rot_VL
+LABEL $F61F ___Rot_VL_Mode
+LABEL $F622 ___Rot_VL_Pack
+LABEL $F62B ___Rot_VL_M_dft
+LABEL $F65B ___Xform_Run_a
+LABEL $F65D ___Xform_Run
+LABEL $F661 ___Xform_Rise_a
+LABEL $F663 ___Xform_Rise
+LABEL $F67F ___Move_Mem_a_1
+LABEL $F683 ___Move_Mem_a
+LABEL $F687 ___Init_Music_chk
+LABEL $F68D ___Init_Music
+LABEL $F690 ___Init_Music_a
+LABEL $F692 ___Init_Music_x
+LABEL $F742 ___Stop_Sound
+LABEL $F7A9 ___Select_Game
+LABEL $F835 ___Display_Option
+LABEL $F84F ___Clear_Score
+LABEL $F85E ___Add_Score_a
+LABEL $F87C ___Add_Score_d
+LABEL $F8B7 ___Strip_Zeros
+LABEL $F8C7 ___Compare_Score
+LABEL $F8D8 ___New_High_Score
+LABEL $F8E5 ___Obj_Will_Hit_u
+LABEL $F8F3 ___Obj_Will_Hit
+LABEL $F8FF ___Obj_Hit
+LABEL $F92E ___Explosion_Snd
+LABEL $F9CA ___Set_Amp
+COMMENT $00D5 cmphi
+COMMENT $00E6 cmphi
+COMMENT $010A cmphi: R:d with R:x
+COMMENT $010C cmphi
+COMMENT $0156 cmphi: R:u with R:x
+COMMENT $0158 cmphi
+COMMENT $0162 BIOS call
+COMMENT $0167 BIOS call
+COMMENT $016E BIOS call
+COMMENT $0177 BIOS call
+COMMENT $0182 BIOS call
+COMMENT $018D BIOS call
+COMMENT $0196 BIOS call
+COMMENT $019F BIOS call
+COMMENT $01A8 BIOS call
+COMMENT $01AF BIOS call
+COMMENT $01B4 BIOS call
+COMMENT $01BB BIOS call
+COMMENT $01C2 BIOS call
+COMMENT $01C9 BIOS call
+COMMENT $01CE BIOS call
+COMMENT $01D3 BIOS call
+COMMENT $01D8 BIOS call
+COMMENT $01DD BIOS call
+COMMENT $01E2 BIOS call
+COMMENT $01E7 BIOS call
+COMMENT $01EC BIOS call
+COMMENT $01F5 BIOS call
+COMMENT $01FE BIOS call
+COMMENT $0207 BIOS call
+COMMENT $020C BIOS call
+COMMENT $0212 BIOS call
+COMMENT $021A BIOS call
+COMMENT $0222 BIOS call
+COMMENT $022A BIOS call
+COMMENT $0230 BIOS call
+COMMENT $0238 BIOS call
+COMMENT $023E BIOS call
+COMMENT $0246 BIOS call
+COMMENT $024C BIOS call
+COMMENT $0254 BIOS call
+COMMENT $025D BIOS call
+COMMENT $0268 BIOS call
+COMMENT $026F BIOS call
+COMMENT $0274 BIOS call
+COMMENT $027B BIOS call
+COMMENT $0286 BIOS call
+COMMENT $028F BIOS call
+COMMENT $0296 BIOS call
+COMMENT $029D BIOS call
+COMMENT $02A8 BIOS call
+COMMENT $02AF BIOS call
+COMMENT $02B4 BIOS call
+COMMENT $02BB BIOS call
+COMMENT $02C4 BIOS call
+COMMENT $02CB BIOS call
+COMMENT $02D4 BIOS call
+COMMENT $02DD BIOS call
+COMMENT $02E6 BIOS call
+COMMENT $02EF BIOS call
+COMMENT $02F8 BIOS call
+COMMENT $02FF BIOS call
+COMMENT $0304 BIOS call
+COMMENT $0309 BIOS call
+COMMENT $030E BIOS call
+COMMENT $0313 BIOS call
+COMMENT $031F BIOS call
+COMMENT $0331 BIOS call
+COMMENT $0341 BIOS call
+COMMENT $034C BIOS call
+COMMENT $0354 BIOS call
+COMMENT $035C BIOS call
+COMMENT $0368 BIOS call
+COMMENT $0371 BIOS call
+COMMENT $037A BIOS call
+COMMENT $0383 BIOS call
+COMMENT $038C BIOS call
+COMMENT $0396 BIOS call
+COMMENT $03A0 BIOS call
+COMMENT $03AB BIOS call
+COMMENT $03B4 BIOS call
+COMMENT $03BD BIOS call
+COMMENT $03C2 BIOS call
+COMMENT $03CA BIOS call
+COMMENT $03D1 BIOS call
+COMMENT $03D8 BIOS call
+COMMENT $03DF : ; joystickAxisValue
+COMMENT $03E3 extendqihi2: R:b -> R:d ; joystickAxisValue, joystickAxisValue
+COMMENT $03E4 addhi3,3 ; tmp35
+COMMENT $03E9 addhi3,3 ; minValue.27,* variablePtr
+COMMENT $03EB minValue.27,* variablePtr
+COMMENT $03ED cmphi:(R) ; minValue.27, minValue
+COMMENT $03F2 cmphi:(R) ; minValue.27, maxValue
+COMMENT $03F7 minValue.27,* variablePtr
+COMMENT $03FB : ; joystickAxisValue
+COMMENT $03FF temp.26,* variablePtr
+COMMENT $0402 iftmp.1
+COMMENT $0405 : ; joystickAxisValue
+COMMENT $0409 joystickAxisValue
+COMMENT $040A extendqihi2: R:b -> R:d ; joystickAxisValue, tmp38
+COMMENT $040B addhi3,3 ; tmp39
+COMMENT $0410 tmp39, iftmp.1
+COMMENT $0412 temp.26, minValue.27
+COMMENT $0414 subhi: R:d -= R:u ; iftmp.1, minValue.27
+COMMENT $0416 minValue.27
+COMMENT $0418 minValue.27,* variablePtr
+COMMENT $041C minValue.27,* variablePtr
+COMMENT $0420 minValue.27, maxValue
+COMMENT $0422 minValue.27,* variablePtr
+COMMENT $0426 minValue.27, minValue
+COMMENT $0428 minValue.27,* variablePtr
+COMMENT $0430 str, str
+COMMENT $0432 num, num
+COMMENT $0434 tmp33
+COMMENT $0438 tmp33
+COMMENT $043A zero_extendqihi: R:b -> R:d ; num
+COMMENT $0442 movlsbqihi: R:x -> R:b ; tmp32
+COMMENT $0444 num.45
+COMMENT $0446 tmp33
+COMMENT $0448 num
+COMMENT $044A zero_extendqihi: R:b -> R:d
+COMMENT $0450 movlsbqihi: R:x -> R:b ; tmp36, tmp38
+COMMENT $0452 tmp38
+COMMENT $0454 tmp38
+COMMENT $0456 tmp33
+COMMENT $0459 num.45
+COMMENT $045B zero_extendqihi: R:b -> R:d
+COMMENT $0461 movlsbqihi: R:x -> R:b ; tmp41, tmp43
+COMMENT $0463 tmp43
+COMMENT $0465 tmp43
+COMMENT $0467 tmp33
+COMMENT $046A num.45
+COMMENT $046C zero_extendqihi: R:b -> R:d
+COMMENT $0472 tmp46
+COMMENT $0474 zero_extendqihi: R:b -> R:d ; tmp46, tmp49
+COMMENT $0475 tmp33
+COMMENT $0478 tmp49
+COMMENT $047D movlsbqihi: R:x -> R:b ; tmp50, tmp52
+COMMENT $047F tmp52
+COMMENT $0481 tmp52,* str
+COMMENT $04A2 Vec_Joy_Resltn
+COMMENT $04A7 Vec_Joy_Mux_1_X
+COMMENT $04AC Vec_Joy_Mux_1_Y
+COMMENT $04AF Vec_Joy_Mux_2_X
+COMMENT $04B2 Vec_Joy_Mux_2_Y
+COMMENT $04B7 vectorList
+COMMENT $04B9 vectorList
+COMMENT $04BD vectorList
+COMMENT $04C1 vectorList
+COMMENT $04C3 vectorList
+COMMENT $04C5 vectorList
+COMMENT $04C9 vectorList
+COMMENT $04CB vectorList
+COMMENT $04CE vectorList
+COMMENT $04D3 vectorList
+COMMENT $04D6 vectorList
+COMMENT $04D9 vectorList
+COMMENT $04DC vectorList
+COMMENT $04DF vectorList
+COMMENT $04E4 vectorList
+COMMENT $04E7 vectorList
+COMMENT $04EA vectorList
+COMMENT $04EF vectorList
+COMMENT $04F2 vectorList
+COMMENT $04F8 scale16
+COMMENT $04FA width16
+COMMENT $0500 extendqihi2: R:b -> R:d ; Vec_Joy_1_Y.5, Vec_Joy_1_Y.5
+COMMENT $0501 addhi3,3 ; tmp41
+COMMENT $0506 addhi3,3 ; tmp42, scale16
+COMMENT $0508 tmp42, scale16
+COMMENT $050A scale16
+COMMENT $050C cmphi
+COMMENT $0513 cmphi
+COMMENT $051E zero_extendqihi: R:b -> R:d
+COMMENT $051F prephitmp.74
+COMMENT $0521 Vec_Joy_1_X.6, Vec_Joy_1_X
+COMMENT $0524 : ; Vec_Joy_1_X.6
+COMMENT $052A extendqihi2: R:b -> R:d ; Vec_Joy_1_X.6, Vec_Joy_1_X.6
+COMMENT $052B addhi3,3 ; tmp48
+COMMENT $0530 width16, tmp49, width16
+COMMENT $0532 cmphi: ; width16
+COMMENT $053A cmphi: ; width16
+COMMENT $0542 width16, tmp53
+COMMENT $0546 zero_extendqihi: R:b -> R:d
+COMMENT $0547 movlsbqihi: R:d -> 6,s ; prephitmp.82, tmp53
+COMMENT $0549 movlsbqihi: R:d -> 7,s ; prephitmp.100, tmp53
+COMMENT $054B prephitmp.82
+COMMENT $054E prephitmp.84
+COMMENT $0550 vectorList
+COMMENT $0552 prephitmp.100
+COMMENT $0554 vectorList
+COMMENT $0556 vectorList
+COMMENT $0559 prephitmp.84
+COMMENT $055B vectorList
+COMMENT $055E vectorList
+COMMENT $0567 prephitmp.74
+COMMENT $0569 VIA_t1_cnt_lo
+COMMENT $057A tmp58
+COMMENT $057E tmp58
+COMMENT $0580 prephitmp.74
+COMMENT $0582 zero_extendqihi: R:b -> R:d
+COMMENT $058A tmp57
+COMMENT $058C movlsbqihi: R:d -> 4,s ; scale
+COMMENT $058E tmp58
+COMMENT $0590 prephitmp.74
+COMMENT $0592 zero_extendqihi: R:b -> R:d
+COMMENT $059A movlsbqihi: R:x -> R:b ; tmp61, tmp63
+COMMENT $059C tmp63
+COMMENT $059E tmp63, scaleString
+COMMENT $05A1 tmp58
+COMMENT $05A3 scale
+COMMENT $05A5 zero_extendqihi: R:b -> R:d
+COMMENT $05AD movlsbqihi: R:x -> R:b ; tmp66, tmp68
+COMMENT $05AF tmp68
+COMMENT $05B1 tmp68, scaleString
+COMMENT $05B4 tmp58
+COMMENT $05B6 scale
+COMMENT $05B8 zero_extendqihi: R:b -> R:d
+COMMENT $05BE tmp71
+COMMENT $05C0 zero_extendqihi: R:b -> R:d ; tmp71, tmp74
+COMMENT $05C1 tmp58
+COMMENT $05C4 tmp74
+COMMENT $05CB movlsbqihi: R:x -> R:b ; tmp75, tmp77
+COMMENT $05CD tmp77
+COMMENT $05CF tmp77, scaleString
+COMMENT $05D4 scaleString
+COMMENT $05D7 tmp58
+COMMENT $05D9 prephitmp.82
+COMMENT $05DB zero_extendqihi: R:b -> R:d
+COMMENT $05E3 tmp80
+COMMENT $05E5 movlsbqihi: R:d -> 9,s ; width.102
+COMMENT $05E7 tmp58
+COMMENT $05E9 prephitmp.82
+COMMENT $05EB zero_extendqihi: R:b -> R:d
+COMMENT $05F3 movlsbqihi: R:x -> R:b ; tmp84, tmp86
+COMMENT $05F5 tmp86
+COMMENT $05F7 tmp86, widthString
+COMMENT $05FA tmp58
+COMMENT $05FC width.102
+COMMENT $05FE zero_extendqihi: R:b -> R:d
+COMMENT $0606 movlsbqihi: R:x -> R:b ; tmp89, tmp91
+COMMENT $0608 tmp91
+COMMENT $060A tmp91, widthString
+COMMENT $060D tmp58
+COMMENT $060F width.102
+COMMENT $0611 zero_extendqihi: R:b -> R:d
+COMMENT $0617 tmp94
+COMMENT $0619 zero_extendqihi: R:b -> R:d ; tmp94, tmp97
+COMMENT $061A tmp58
+COMMENT $061D tmp97
+COMMENT $0624 movlsbqihi: R:x -> R:b ; tmp98, tmp100
+COMMENT $0626 tmp100
+COMMENT $0628 tmp100, widthString
+COMMENT $062D widthString
+COMMENT $0668 Vec_Joy_1_Y.5, Vec_Joy_1_Y
+COMMENT $066B : ; Vec_Joy_1_Y.5
+COMMENT $0671 : ; Vec_Joy_1_Y.5
+COMMENT $0677 iftmp.1
+COMMENT $067A : ; Vec_Joy_1_Y.5
+COMMENT $067E Vec_Joy_1_Y.5
+COMMENT $067F extendqihi2: R:b -> R:d ; Vec_Joy_1_Y.5, tmp44
+COMMENT $0680 addhi3,3 ; tmp45
+COMMENT $0685 tmp45, iftmp.1
+COMMENT $0687 scale16
+COMMENT $0689 subhi: R:d -= R:x ; iftmp.1
+COMMENT $068D scale16
+COMMENT $0692 : ; Vec_Joy_1_X.6
+COMMENT $0698 iftmp.1
+COMMENT $069B : ; Vec_Joy_1_X.6
+COMMENT $069F Vec_Joy_1_X.6
+COMMENT $06A0 extendqihi2: R:b -> R:d ; Vec_Joy_1_X.6, tmp51
+COMMENT $06A1 addhi3,3 ; tmp52
+COMMENT $06A6 tmp52, iftmp.1
+COMMENT $06A8 width16
+COMMENT $06AA subhi: R:d -= R:x ; iftmp.1
+COMMENT $06AE width16
+COMMENT $06B3 width16
+COMMENT $06B8 prephitmp.82
+COMMENT $06BA prephitmp.100
+COMMENT $06BE prephitmp.84
+COMMENT $06C6 scale16
+COMMENT $06CA prephitmp.74
+COMMENT $06CF width16
+COMMENT $06D4 prephitmp.82
+COMMENT $06D6 prephitmp.100
+COMMENT $06DA prephitmp.84
+COMMENT $06E2 scale16
+COMMENT $06E6 prephitmp.74
+C_INFO_BLOCK $03DF "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 56 " static const SINT8 JOY_DEAD_ZONE = 30;,  if (joystickAxisValue > JOY_DEAD_ZONE) { " BKPOINT=0
+C_INFO_BLOCK $03E3 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 57 "  (*variablePtr) += (( ((UINT16)joystickAxisValue) - JOY_DEAD_ZONE) << 1); " BKPOINT=0
+C_INFO_BLOCK $03ED "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 32 " *variablePtr = clampToRange(*variablePtr, minValue, maxValue);,  if (value < min) { " BKPOINT=0
+C_INFO_BLOCK $03F7 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 37 "  return value; " BKPOINT=0
+C_INFO_BLOCK $03FF "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 59 "  (*variablePtr) -= (( (joystickAxisValue == -128 ? 127 : (UINT16)-joystickAxisValue) - JOY_DEAD_ZONE) << 1); " BKPOINT=0
+C_INFO_BLOCK $0420 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 35 "  return max; " BKPOINT=0
+C_INFO_BLOCK $0426 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 33 "  return min; " BKPOINT=0
+C_INFO_BLOCK $0434 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 71 " static const UINT8 numDigits = 3;,  for (SINT8 strPos = (numDigits - 1); (strPos >= 0); strPos--) {,   const UINT8 currentDigit = (num % 10);,   num /= 10; " BKPOINT=0
+C_INFO_BLOCK $0446 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $0456 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  const UINT8 currentDigit = (num % 10);,   num /= 10;,   str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $0467 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  const UINT8 currentDigit = (num % 10);,   num /= 10;,   str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $0483 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 74 " str[numDigits] = 0x80;  // terminate string " BKPOINT=0
+C_INFO_BLOCK $04A2 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 85 " static const UINT8 DEFAULT_WIDTH = 80;,  static const UINT16 MIN_SCALE_16 = toHighOrderByte(10);,  static const UINT16 MAX_SCALE_16 = toHighOrderByte(200);,  static const UINT16 MIN_WIDTH_16 = toHighOrderByte(10);,  static const UINT16 MAX_WIDTH_16 = toHighOrderByte(127);,  Vec_Joy_Resltn = 0;   // set to a power of 2, with 128 = least accurate, 0 = most accurate " BKPOINT=0
+C_INFO_BLOCK $04A5 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 88 " Vec_Joy_Mux_1_X = 1; " BKPOINT=0
+C_INFO_BLOCK $04AA "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 89 " Vec_Joy_Mux_1_Y = 3; " BKPOINT=0
+C_INFO_BLOCK $04AF "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 92 " Vec_Joy_Mux_2_X = 0; " BKPOINT=0
+C_INFO_BLOCK $04B2 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 93 " Vec_Joy_Mux_2_Y = 0; " BKPOINT=0
+C_INFO_BLOCK $04B5 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 104 " UINT16 scale16 = toHighOrderByte(100);,  UINT16 width16 = toHighOrderByte(DEFAULT_WIDTH);,  UINT8 scaleString[4];,  UINT8 widthString[4];,  SINT8 vectorList[] = { " BKPOINT=0
+C_INFO_BLOCK $04F5 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 117 " while (1) { " BKPOINT=0
+C_INFO_BLOCK $0500 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 57 "  (*variablePtr) += (( ((UINT16)joystickAxisValue) - JOY_DEAD_ZONE) << 1); " BKPOINT=0
+C_INFO_BLOCK $050A "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 32 " *variablePtr = clampToRange(*variablePtr, minValue, maxValue);,  if (value < min) { " BKPOINT=0
+C_INFO_BLOCK $051C "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 37 "  return value; " BKPOINT=0
+C_INFO_BLOCK $0521 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 123 "  adjustVariable(&width16, Vec_Joy_1_X, MIN_WIDTH_16, MAX_WIDTH_16); " BKPOINT=0
+C_INFO_BLOCK $0524 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 56 " static const SINT8 JOY_DEAD_ZONE = 30;,  if (joystickAxisValue > JOY_DEAD_ZONE) { " BKPOINT=0
+C_INFO_BLOCK $052A "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 57 "  (*variablePtr) += (( ((UINT16)joystickAxisValue) - JOY_DEAD_ZONE) << 1); " BKPOINT=0
+C_INFO_BLOCK $0532 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 32 " *variablePtr = clampToRange(*variablePtr, minValue, maxValue);,  if (value < min) { " BKPOINT=0
+C_INFO_BLOCK $0542 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 37 "  return value; " BKPOINT=0
+C_INFO_BLOCK $0550 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 130 "  const UINT8 scale = getHighOrderByte(scale16);,   const UINT8 width = getHighOrderByte(width16);,   vectorList[2] = -(SINT8)width; " BKPOINT=0
+C_INFO_BLOCK $0552 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 131 "  vectorList[6] = (SINT8)width; " BKPOINT=0
+C_INFO_BLOCK $0556 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 132 "  vectorList[8] = (SINT8)width; " BKPOINT=0
+C_INFO_BLOCK $0559 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 133 "  vectorList[14] = -(SINT8)width; " BKPOINT=0
+C_INFO_BLOCK $055E "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 134 "  vectorList[16] = -(SINT8)width; " BKPOINT=0
+C_INFO_BLOCK $0561 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 137 "  Reset0Ref(); " BKPOINT=0
+C_INFO_BLOCK $0564 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 138 "  Intensity_5F(); " BKPOINT=0
+C_INFO_BLOCK $0567 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 139 "  VIA_t1_cnt_lo = scale; " BKPOINT=0
+C_INFO_BLOCK $056C "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 140 "  Moveto_d(0, 0); " BKPOINT=0
+C_INFO_BLOCK $0572 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 141 "  Mov_Draw_VLc_a(vectorList); " BKPOINT=0
+C_INFO_BLOCK $0577 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 142 "  Reset0Ref(); " BKPOINT=0
+C_INFO_BLOCK $057A "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 71 "  numToString(scaleString, scale);,  static const UINT8 numDigits = 3;,  for (SINT8 strPos = (numDigits - 1); (strPos >= 0); strPos--) {,   const UINT8 currentDigit = (num % 10);,   num /= 10; " BKPOINT=0
+C_INFO_BLOCK $058E "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $05A1 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  const UINT8 currentDigit = (num % 10);,   num /= 10;,   str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $05B4 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  const UINT8 currentDigit = (num % 10);,   num /= 10;,   str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $05D2 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 74 " str[numDigits] = 0x80;  // terminate string " BKPOINT=0
+C_INFO_BLOCK $05D7 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 71 "  numToString(widthString, width);,  static const UINT8 numDigits = 3;,  for (SINT8 strPos = (numDigits - 1); (strPos >= 0); strPos--) {,   const UINT8 currentDigit = (num % 10);,   num /= 10; " BKPOINT=0
+C_INFO_BLOCK $05E7 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $05FA "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  const UINT8 currentDigit = (num % 10);,   num /= 10;,   str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $060D "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 72 "  const UINT8 currentDigit = (num % 10);,   num /= 10;,   str[strPos] = (currentDigit + '0'); " BKPOINT=0
+C_INFO_BLOCK $062B "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 74 " str[numDigits] = 0x80;  // terminate string " BKPOINT=0
+C_INFO_BLOCK $0630 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 148 "  Print_Str_d(14, -63, "SCALE:€:"); " BKPOINT=0
+C_INFO_BLOCK $063C "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 149 "  Print_Str_d(14, 20, scaleString); " BKPOINT=0
+C_INFO_BLOCK $0648 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 151 "  Print_Str_d(-6, -63, "WIDTH:€:"); " BKPOINT=0
+C_INFO_BLOCK $0654 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 152 "  Print_Str_d(-6, 20, widthString);   " BKPOINT=0
+C_INFO_BLOCK $0662 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 118 "  Wait_Recal(); " BKPOINT=0
+C_INFO_BLOCK $0665 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 119 "  Joy_Analog(); " BKPOINT=0
+C_INFO_BLOCK $0668 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 122 "  adjustVariable(&scale16, Vec_Joy_1_Y, MIN_SCALE_16, MAX_SCALE_16); " BKPOINT=0
+C_INFO_BLOCK $066B "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 56 " static const SINT8 JOY_DEAD_ZONE = 30;,  if (joystickAxisValue > JOY_DEAD_ZONE) { " BKPOINT=0
+C_INFO_BLOCK $0677 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 59 "  (*variablePtr) -= (( (joystickAxisValue == -128 ? 127 : (UINT16)-joystickAxisValue) - JOY_DEAD_ZONE) << 1); " BKPOINT=0
+C_INFO_BLOCK $0698 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 59 "  (*variablePtr) -= (( (joystickAxisValue == -128 ? 127 : (UINT16)-joystickAxisValue) - JOY_DEAD_ZONE) << 1); " BKPOINT=0
+C_INFO_BLOCK $06B3 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 33 "  return min; " BKPOINT=0
+C_INFO_BLOCK $06C3 "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 33 "  return min; " BKPOINT=0
+C_INFO_BLOCK $06CF "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 35 "  return max; " BKPOINT=0
+C_INFO_BLOCK $06DF "G:\Vide2.5.1\projects\screen_limits_test\source\main.c "FN_END 35 "  return max; " BKPOINT=0
+RANGE $0000-$0001 DB_DATA 8
+RANGE $0008-$0009 DB_DATA 8
+RANGE $000B-$000D DW_DATA 4
+RANGE $000D-$0012 DB_DATA 8
+RANGE $0019-$001A DB_DATA 8
+RANGE $0021-$0022 DB_DATA 8
+RANGE $0025-$048B CODE
+RANGE $048B-$048C DB_DATA 8
+RANGE $0493-$0495 DB_DATA 8
+RANGE $049C-$049D DB_DATA 8
+RANGE $049D-$06EB CODE
+RANGE $06EB-$06EC DB_DATA 8
+RANGE $06EC-$06F4 DW_DATA 4
+RANGE $06F4-$06F6 DB_DATA 8
+
